@@ -18,7 +18,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -111,6 +111,15 @@ a {
     padding: 25px 18px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+}
+
+#logo {
+    transition: 1s ease;
+}
+
+#logo:hover {
+    transform: scale(1.2);
+    transition: 1s ease;
 }
 
 #nav-bar #left #logo-caption {
@@ -256,4 +265,12 @@ a {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+#about-header {
+    margin-top: 150px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color: whitesmoke;
 }
