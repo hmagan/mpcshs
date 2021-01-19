@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#home").addClass("nav-button-highlight");
   setTimeout(function(){
     let i = 0.0;
     $("#about-us").css("pointer-events", "auto");
