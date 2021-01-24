@@ -297,7 +297,7 @@ a {
 }
 
 .about-content {
-    margin: 30px 5%;
+    margin: 40px 5%;
 }
 
 #about-list {
@@ -334,7 +334,7 @@ a {
 #clickable {
     color: var(--mp-green);
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 #clickable:hover {
