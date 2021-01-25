@@ -70,14 +70,6 @@ p {
     line-height: 1.3;
 }
 
-#logo {
-    height: 45px; /* absolute height: 56.25 */
-    width: 64px; /* absolute width: 80.21 */
-    position: absolute;
-    top: 12px;
-    left: 12px;
-}
-
 #nav-bar {
     display: fixed;
     position: absolute;
@@ -87,6 +79,7 @@ p {
     border-bottom: 2px solid var(--gray);
     background-color: var(--black);
     z-index: 1;
+    height: 62px;
 }
 
 a {
@@ -124,17 +117,24 @@ a {
 }
 
 #logo {
+    height: 45px; /* absolute height: 56.25 */
+    width: 64px; /* absolute width: 80.21 */
+    position: absolute;
+    top: 9px;
+    left: 18px;
     transition: 1s ease;
 }
 
 #logo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s ease;
 }
 
-#nav-bar #left #logo-caption {
+#logo-caption {
     font-family: 'Montserrat', sans-serif;
-    margin-left: 100px;
+    margin-left: 65px;
+    position: absolute;
+    top: 0;
 }
 
 #left {
@@ -288,15 +288,15 @@ a {
     100% { background-position: 0 0; }
 }
 
-#about-header {
-    margin-top: 150px;
+.content-header {
+    margin-top: 120px;
     font-size: 40px;
     font-weight: 800;
     text-align: center;
     color: whitesmoke;
 }
 
-.about-content {
+.text-content {
     margin: 40px 5%;
 }
 
@@ -316,6 +316,7 @@ a {
 
 #about-list li {
     transition: 0.5s;
+    margin: 10px 0;
 }
 
 #about-list li:hover {
@@ -339,4 +340,61 @@ a {
 
 #clickable:hover {
     text-decoration: underline;
+}
+
+.divider {
+    height: 2px;
+    background-color: var(--gray);
+    width: 95%;
+    margin: 50px auto;
+}
+
+.subtext {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#resource-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resource-item img {
+    border: 2px solid var(--mp-green);
+    max-width: 90%;
+    height: auto;
+    margin: 0 5%;
+    box-shadow: 0 0 0 transparent;
+    transition: 0.5s;
+}
+
+.resource-item img:hover {
+    transition: 0.5s;
+    transform: translateY(-10px) translateX(10px);
+    box-shadow: -10px 10px 25px black;
+}
+
+.resource-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.resource-header a {
+    color: var(--mp-green);
+    border-bottom: 1px solid transparent;
+    font-size: 24px;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+.resource-header a:hover {
+    border-bottom-color: var(--mp-green);
+    transition: 0.5s;
+}
+
+.resource-description {
+    text-align: center;
+    margin: 20px 0;
 }
