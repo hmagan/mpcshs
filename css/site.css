@@ -365,7 +365,6 @@ a {
     border: 2px solid var(--mp-green);
     max-width: 90%;
     height: auto;
-    margin: 0 5%;
     box-shadow: 0 0 0 transparent;
     transition: 0.5s;
 }
@@ -374,6 +373,10 @@ a {
     transition: 0.5s;
     transform: translateY(-10px) translateX(10px);
     box-shadow: -10px 10px 25px black;
+}
+
+.img-wrapper {
+    text-align: center;
 }
 
 .resource-header {
@@ -396,5 +399,9 @@ a {
 
 .resource-description {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 30px;
+}
+
+.lang {
+    color: var(--mp-green);
 }
