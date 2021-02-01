@@ -402,6 +402,34 @@ a {
     margin: 60px 30px 20px 30px;
 }
 
+.resource-description a {
+    color: var(--mp-green);
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.resource-description a:hover {
+    border-bottom-color: var(--mp-green);
+    transition: 0.5s;
+}
+
 .lang {
     color: var(--mp-green);
+}
+
+.jump-to-mooc {
+    cursor: pointer;
+}
+
+#contacts {
+    color: whitesmoke;
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 2;
+}
+
+.copy-on-click {
+    
 }
