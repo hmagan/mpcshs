@@ -3,11 +3,13 @@ function getReboundScrollPosition(){
 }
 
 $(document).ready(function(){
+    //add indicator on navbar
     $("#resources").addClass("nav-button-highlight");
     $(".jump-to-mooc").click(function(){
         //wait 1ms to allow browser to jump down before rebounding
         setTimeout(function(){
             let pos = $(document).scrollTop();
+            //scrolls to middle of page
             $(document).scrollTop(pos - getReboundScrollPosition());
             $("#mooc-wrapper").css("background-color", "#ebe859"); //yellow
             setTimeout(function(){
