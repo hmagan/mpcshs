@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	//add indicator on navbar
 	$("#home").addClass("nav-button-highlight");
-	//fade in about button
 	setTimeout(function(){
 		let i = 0.0;
 		$("#about-us").css("pointer-events", "auto");

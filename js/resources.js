@@ -9,7 +9,6 @@ $(document).ready(function(){
         //wait 1ms to allow browser to jump down before rebounding
         setTimeout(function(){
             let pos = $(document).scrollTop();
-            //scrolls to middle of page
             $(document).scrollTop(pos - getReboundScrollPosition());
             $("#mooc-wrapper").css("background-color", "#ebe859"); //yellow
             setTimeout(function(){
