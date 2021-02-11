@@ -1,3 +1,18 @@
+/*
+One big CSS file for the whole site.
+Enjoy looking through our code!
+
+    _  _   __  __ _____   _____  _____ _    _  _____ 
+  _| || |_|  \/  |  __ \ / ____|/ ____| |  | |/ ____|
+ |_  __  _| \  / | |__) | |    | (___ | |__| | (___  
+  _| || |_| |\/| |  ___/| |     \___ \|  __  |\___ \ 
+ |_  __  _| |  | | |    | |____ ____) | |  | |____) |
+   |_||_| |_|  |_|_|     \_____|_____/|_|  |_|_____/
+
+   
+*/
+
+
 /* This resets the CSS for compatability across browsers */
 
 html, body, div, span, applet, object, iframe,
@@ -324,7 +339,7 @@ a {
     transition: 0.5s;
 }
 
-#about-subheading {
+.subheading {
     font-size: 24px;
     font-weight: 800;
     margin-top: 30px;
@@ -428,4 +443,61 @@ a {
     margin: 20px 0;
     text-align: center;
     line-height: 2;
+}
+
+#contacts li {
+    margin: 15px 0;
+}
+
+#contacts div {
+    display: inline;
+}
+
+.copy-on-click {
+    border-bottom: 1px dotted var(--mp-green);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.copy-transition {
+    transition: 0.5s linear;
+}
+
+.copy-text {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    z-index: 1337;
+    background-color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 100px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+    font-size: 18px;
+}
+
+.copy-on-click:hover .copy-text {
+    visibility: visible;
+}
+
+#socials {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#socials img {
+    transition: 0.5s ease-in;
+    display: inline;
+    margin: 0 15px;
+    width: 70px;
+    height: 70px;
+}
+
+#socials img:hover {
+    transition: 0.5s ease-out;
+    transform: translate(10px, -10px);
 }
