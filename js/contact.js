@@ -1,12 +1,3 @@
-function copyOnClick(selector){
-    let clipboard = new ClipboardJS(selector, {
-        text: function(){
-            //copy string directly to clipboard without "Copied!" appended to the end
-            return selector.textContent.substring(0, selector.textContent.length - 7);
-        }
-    });
-}
-
 $(document).ready(function(){
     //add indicator on navbar
     $("#contact").addClass("nav-button-highlight");
@@ -40,3 +31,12 @@ $(document).ready(function(){
         clearInterval(fadeIn);
     });
 });
+
+function copyOnClick(selector){
+    let clipboard = new ClipboardJS(selector, {
+        text: function(){
+            //copy string directly to clipboard without "Copied!" appended to the end
+            return selector.textContent.substring(0, selector.textContent.length - 7);
+        }
+    });
+}

@@ -1,7 +1,3 @@
-function getReboundScrollPosition(){
-    return innerHeight / 2;
-}
-
 $(document).ready(function(){
     //add indicator on navbar
     $("#resources").addClass("nav-button-highlight");
@@ -19,3 +15,7 @@ $(document).ready(function(){
         }, 1);
     });
 });
+
+function getReboundScrollPosition(){
+    return innerHeight / 2;
+}
