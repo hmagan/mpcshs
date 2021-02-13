@@ -1,7 +1,8 @@
 /*
-One big CSS file for the whole site.
-Enjoy looking through our code!
 
+         One big CSS file for the whole site.
+           Enjoy looking through our code!
+ 
     _  _   __  __ _____   _____  _____ _    _  _____ 
   _| || |_|  \/  |  __ \ / ____|/ ____| |  | |/ ____|
  |_  __  _| \  / | |__) | |    | (___ | |__| | (___  
@@ -86,8 +87,7 @@ p {
 }
 
 #nav-bar {
-    display: fixed;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -132,8 +132,8 @@ a {
 }
 
 #logo {
-    height: 45px; /* absolute height: 56.25 */
-    width: 64px; /* absolute width: 80.21 */
+    height: 45px;
+    width: 64px;
     position: absolute;
     top: 9px;
     left: 18px;
@@ -195,7 +195,6 @@ a {
     color: whitesmoke;
     font-size: 23px;
     font-weight: 800;
-
     /* typewriter effect courtesy of https://css-tricks.com/snippets/css/typewriter-effect/ */
 
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -501,3 +500,37 @@ a {
     transition: 0.5s ease-out;
     transform: translate(10px, -10px);
 }
+
+.no-scroll-vert {
+    overflow-y: hidden;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 942px){
+    #left {
+        display: none;
+    }
+    #right {
+        float: none;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    #contact {
+        margin-right: 0px;
+    }
+}
+
+/*
+@media only screen and (max-width: 840px){
+    #welcome {
+        overflow: visible;
+        white-space: normal;
+        width: 100%;
+    }
+    @keyframes typing {
+
+    }
+}
+*/
