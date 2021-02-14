@@ -491,14 +491,14 @@ a {
 #socials img {
     transition: 0.5s ease-in;
     display: inline;
-    margin: 0 15px;
+    margin: 0 8px;
     width: 70px;
     height: 70px;
 }
 
 #socials img:hover {
     transition: 0.5s ease-out;
-    transform: translate(10px, -10px);
+    transform: translate(0px, -15px);
 }
 
 .no-scroll-vert {
