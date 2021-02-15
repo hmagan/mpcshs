@@ -322,6 +322,7 @@ a {
     left: 50%;
     transform: translate(-50%, 0);
     line-height: 2;
+    user-select: none;
 }
 
 #about-list span {
@@ -505,6 +506,10 @@ a {
     overflow-y: hidden;
 }
 
+.no-scroll-horz {
+    overflow-x: hidden;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 942px){
@@ -522,15 +527,25 @@ a {
     }
 }
 
-/*
+
 @media only screen and (max-width: 840px){
     #welcome {
-        overflow: visible;
-        white-space: normal;
-        width: 100%;
+        width: 615px;
+        font-size: 17px;
     }
     @keyframes typing {
-
+        from { width: 0 }
+        to { width: 615px }
     }
 }
-*/
+
+@media only screen and (max-width: 624px){
+    #welcome {
+        width: 472px;
+        font-size: 13px;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 472px }
+    }
+}
