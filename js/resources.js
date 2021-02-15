@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("body").addClass("no-scroll-horz");
     //add indicator on navbar
     $("#resources").addClass("nav-button-highlight");
     $(".jump-to-mooc").click(function(){
@@ -19,3 +20,8 @@ $(document).ready(function(){
 function getReboundScrollPosition(){
     return innerHeight / 2;
 }
+
+//initialize animate on scroll
+AOS.init({
+    duration: 700
+});
