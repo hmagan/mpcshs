@@ -122,10 +122,6 @@ a {
     color: whitesmoke;
 }
 
-.nav-button-highlight {
-    border-bottom: 2px solid var(--mp-green);
-}
-
 .link {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -508,6 +504,48 @@ a {
 
 .no-scroll-horz {
     overflow-x: hidden;
+}
+
+/* Animation courtesy of https://codepen.io/wisnust10/pen/grpaZb */
+
+#right .nav-button {
+    letter-spacing: 0;
+}
+  
+#right .nav-button:hover,
+#right .nav-button:active {
+    letter-spacing: 5px;
+}
+  
+#right .nav-button:after,
+#right .nav-button:before {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border: 1px solid rgba(76, 187, 23, 0); /* var(--mp-green) */
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 280ms ease-in-out;
+            transition: all 280ms ease-in-out;
+    width: 0;
+}
+  
+#right .nav-button:hover:after,
+#right .nav-button:hover:before {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-color: var(--mp-green);
+    -webkit-transition: width 350ms ease-in-out;
+            transition: width 350ms ease-in-out;
+    width: 70%;
+}
+  
+#right .nav-button:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
 }
 
 /* Media Queries */

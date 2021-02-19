@@ -1,7 +1,5 @@
 $(document).ready(function(){
 	$("body").addClass("no-scroll-vert");
-	//add indicator on navbar
-	$("#home").addClass("nav-button-highlight");
 	fadeIn($("#about-us"));
 });
 

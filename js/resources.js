@@ -1,7 +1,5 @@
 $(document).ready(function(){
     $("body").addClass("no-scroll-horz");
-    //add indicator on navbar
-    $("#resources").addClass("nav-button-highlight");
     $(".jump-to-mooc").click(function(){
         //wait 1ms to allow browser to jump down before rebounding
         setTimeout(function(){

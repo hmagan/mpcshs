@@ -1,4 +1,1 @@
-$(document).ready(function(){
-    //add indicator on navbar
-    $("#about").addClass("nav-button-highlight");
-});
+/* Nothing to see here :) */

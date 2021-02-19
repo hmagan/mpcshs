@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    //add indicator on navbar
-    $("#contact").addClass("nav-button-highlight");
     $(".copy-on-click").click(function(){
         copyOnClick(this);
     });
