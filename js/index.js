@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("#home a").css("color", "whitesmoke");
 	$("body").addClass("no-scroll-vert");
 	fadeIn($("#about-us"));
 });

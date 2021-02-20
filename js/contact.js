@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#contact a").css("color", "whitesmoke");
     $(".copy-on-click").click(function(){
         copyOnClick(this);
     });

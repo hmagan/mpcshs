@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#resources a").css("color", "whitesmoke");
     $("body").addClass("no-scroll-horz");
     $(".jump-to-mooc").click(function(){
         //wait 1ms to allow browser to jump down before rebounding
