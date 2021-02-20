@@ -94,7 +94,7 @@ p {
     border-bottom: 2px solid var(--gray);
     background-color: var(--black);
     z-index: 1;
-    height: 62px;
+    height: 64px;
 }
 
 a {
@@ -117,7 +117,7 @@ a {
     padding: 21px 16px;
 }
 
-.nav-button a:hover {
+#left .nav-button a:hover {
     transition: 0.5s;
     color: whitesmoke;
 }
